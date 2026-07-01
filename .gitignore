@@ -1,0 +1,10 @@
+node_modules
+dist
+plugin-contents
+*.ppk
+.env
+*.zip
+test-results
+playwright-report
+coverage
+.DS_Store
