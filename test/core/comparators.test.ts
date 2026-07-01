@@ -10,6 +10,16 @@ describe("compareField (spec 4.4)", () => {
     expect(compareField("NUMBER", "1000", "1000.0")).toBe("same");
   });
 
+  it("digit grouping is a formatting difference, not a change", () => {
+    expect(compareField("NUMBER", "1000", "1,000")).toBe("same");
+    expect(compareField("NUMBER", "1,000", "1,001")).toBe("changed");
+  });
+
+  it("unparsable number values fall back to string comparison", () => {
+    expect(compareField("NUMBER", "abc", "abc")).toBe("same");
+    expect(compareField("NUMBER", "abc", "abd")).toBe("changed");
+  });
+
   it("TC-3: two empty numbers are same", () => {
     expect(compareField("NUMBER", "", "")).toBe("same");
   });
