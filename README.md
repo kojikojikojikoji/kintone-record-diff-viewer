@@ -1,5 +1,7 @@
 # kintone Record Diff Viewer
 
+Documentation in Japanese: [README.ja.md](./README.ja.md)
+
 Compare two records in the same kintone app side by side and see what differs. A
 button on the detail and list screens opens a picker to choose the records, then
 a modal shows a three-column table (field name, record A, record B) with changed
