@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kintone/js-sdk/master/packages/plugin-manifest-validator/manifest-schema.json",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "type": "APP",
+  "name": {
+    "en": "Record Diff Viewer",
+    "ja": "レコード比較ビューア"
+  },
+  "description": {
+    "en": "Compare two records in the same app side by side and highlight the differences.",
+    "ja": "同一アプリ内の2レコードを横並びで比較し、差分をハイライト表示します。"
+  },
+  "icon": "icon.png",
+  "homepage_url": {
+    "en": "https://github.com/kojimiyazawa/kintone-record-diff-viewer",
+    "ja": "https://github.com/kojimiyazawa/kintone-record-diff-viewer"
+  },
+  "desktop": {
+    "js": ["desktop.js"]
+  },
+  "config": {
+    "html": "config.html",
+    "js": ["config.js"],
+    "required_params": []
+  }
+}

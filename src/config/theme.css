@@ -1,0 +1,135 @@
+/* Shared settings-screen theme for the plugin series (common spec 7). Copied
+   into each repository so the ten plugins look the same. */
+:root {
+  --kp-text: #1f2933;
+  --kp-text-sub: #5f6b7a;
+  --kp-bg: #ffffff;
+  --kp-bg-section: #f7f8fa;
+  --kp-border: #d5dbe1;
+  --kp-primary: #0f6db3;
+  --kp-primary-hover: #0b578f;
+  --kp-danger: #b3261e;
+  --kp-focus: #0f6db3;
+  --kp-radius: 6px;
+  --kp-space: 8px;
+  --kp-font:
+    -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic",
+    Meiryo, sans-serif;
+}
+
+.kp-rdv-config {
+  font-family: var(--kp-font);
+  color: var(--kp-text);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 96px;
+  box-sizing: border-box;
+}
+.kp-rdv-config h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.kp-rdv-config__lead {
+  color: var(--kp-text-sub);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+.kp-rdv-card {
+  background: var(--kp-bg);
+  border: 1px solid var(--kp-border);
+  border-radius: var(--kp-radius);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.kp-rdv-card__title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+.kp-rdv-field {
+  margin-bottom: 16px;
+}
+.kp-rdv-field__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.kp-rdv-field__help {
+  font-size: 12px;
+  color: var(--kp-text-sub);
+  margin-bottom: 8px;
+}
+.kp-rdv-select {
+  height: 36px;
+  min-width: 200px;
+  padding: 0 8px;
+  border: 1px solid var(--kp-border);
+  border-radius: var(--kp-radius);
+  background: var(--kp-bg);
+  font-size: 14px;
+}
+.kp-rdv-select:focus {
+  outline: 2px solid var(--kp-focus);
+  outline-offset: 2px;
+}
+.kp-rdv-selects {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.kp-rdv-error {
+  color: var(--kp-danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
+.kp-rdv-table-match {
+  border-top: 1px solid var(--kp-border);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.kp-rdv-table-match:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+.kp-rdv-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.kp-rdv-bar {
+  position: sticky;
+  bottom: 0;
+  background: var(--kp-bg);
+  border-top: 1px solid var(--kp-border);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.kp-rdv-btn {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: var(--kp-radius);
+  border: 1px solid var(--kp-border);
+  background: var(--kp-bg);
+  font-size: 14px;
+  cursor: pointer;
+}
+.kp-rdv-btn--primary {
+  background: var(--kp-primary);
+  border-color: var(--kp-primary);
+  color: #fff;
+}
+.kp-rdv-btn--primary:hover {
+  background: var(--kp-primary-hover);
+}
+.kp-rdv-btn--text {
+  border-color: transparent;
+  background: transparent;
+  color: var(--kp-primary);
+}
